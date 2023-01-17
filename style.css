@@ -79,3 +79,70 @@ nav {
 .product-div-content a:hover {
   color: rgb(11, 127, 235);
 }
+/*? 3.image offer section*/
+/*? 4.Bank Offer */
+.bank-offer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bank-offer a img {
+  width: 1200px;
+}
+/*? 5.Discounted Product*/
+.discount-product {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.discount-product-content {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.discount-product-content img {
+  width: 438px;
+}
+/*? 6.Top offer section*/
+.offer-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  line-height: 1.4;
+  padding: 4px 40px;
+}
+.offer-section-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 600px;
+}
+.offer-section-left h2 {
+  font-weight: bold;
+  font-size: 5vh;
+  font-weight: lighter;
+}
+.offer-section-btn {
+  background-color: rgb(40, 116, 240);
+  color: white;
+  border: none;
+  font-size: 3vh;
+  padding: 4px 8px;
+}
+.offer-section-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.offer-section-right a img:hover {
+  transform: scale(1.02);
+}
+.offer-section-right a h3 {
+  color: green;
+}
+.offer-section-right h5 {
+  color: rgb(167, 161, 161);
+}
