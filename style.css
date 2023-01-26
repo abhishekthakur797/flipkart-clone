@@ -14,6 +14,9 @@ nav {
   align-items: center;
   background-color: rgb(40, 116, 240);
   padding: 8px 1px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 /*? 1.1 Flipkart and flipkart explore plus*/
 .fk-nav-logo a {
@@ -70,41 +73,28 @@ nav {
   align-items: center;
 }
 .product-div-content img {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
 }
 .product-div-content a {
   color: black;
+  font-size: 2.5vh;
 }
 .product-div-content a:hover {
   color: rgb(11, 127, 235);
 }
 /*? 3.image offer section*/
 /*? 4.Bank Offer */
-.bank-offer {
+.bank-offer a {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .bank-offer a img {
-  width: 1200px;
+  width: 600px;
+  padding: 10px 0px;
 }
-/*? 5.Discounted Product*/
-.discount-product {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
-}
-.discount-product-content {
-  display: flex;
-  width: 100%;
-  gap: 10px;
-}
-.discount-product-content img {
-  width: 438px;
-}
-/*? 6.Top offer section*/
+/*? 5.Top offer section*/
+/*? 7.Top  Deals on fashion*/
 .offer-section {
   display: flex;
   align-items: center;
@@ -137,6 +127,9 @@ nav {
   align-items: center;
   gap: 15px;
 }
+.offer-section-right a img {
+  width: 130px;
+}
 .offer-section-right a img:hover {
   transform: scale(1.02);
 }
@@ -145,4 +138,104 @@ nav {
 }
 .offer-section-right h5 {
   color: rgb(167, 161, 161);
+}
+
+/*? 6.Discounted Product*/
+.discount-product-content {
+  display: grid;
+  width: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+  padding: 10px;
+}
+.discount-product-content img {
+  width: 350px;
+}
+/*? 8.last section before footer*/
+.last-section-before-footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.last-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: grey;
+}
+.last-section-content h4 {
+  font-size: 3vh;
+  font-weight: bold;
+}
+.last-section-content p {
+  font-size: 2vh;
+}
+/** Footer Section*/
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: gray;
+  font-size: 3vh;
+}
+footer a {
+  color: white;
+  font-size: 2vh;
+}
+footer a:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+.footer-top {
+  display: flex;
+  gap: 50px;
+}
+.footer-top-left {
+  border-right: 1px solid white;
+  padding-right: 40px;
+  display: flex;
+  gap: 45px;
+  width: 65%;
+}
+
+.footer-top-right {
+  display: flex;
+  gap: 15px;
+}
+.footer-top-left-content,
+.footer-top-right-content {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+}
+.footer-top-right-content h6 {
+  color: white;
+}
+.footer-down {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+  padding-top: 10px;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+.footer-down i {
+  color: gold;
+}
+.footer-down-img img {
+  width: 40px;
+  height: 23px;
+  background-color: white;
 }
